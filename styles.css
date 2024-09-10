@@ -162,18 +162,3 @@ footer {
     margin-top: 40px;
 }
 
-
-@media (max-width: 768px) {
-    .boxext {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box {
-        width: 90%;
-    }
-
-    table {
-        width: 100%;
-    }
-}
