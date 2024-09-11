@@ -1,52 +1,39 @@
-.hero {
-    text-align: center; 
-    padding: 20px;
-}
-
-.hero img {
-    width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
-    height: auto; /* Mantiene la proporción original de la imagen */
-    display: block; /* Elimina el espacio debajo de la imagen */
-}
-
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-header {
-    width: 100%;
-    background-color: rgb(0, 0, 0); /* Fondo negro */
-    text-align: center;
-    color: white;
-    padding: 20px 0;
+header, body, footer {
+    margin: 0;
+    padding: 0;
 }
-
+body{
+    font-family: Arial, sans-serif;
+}
+header{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
 header h1 {
     font-size: 2.5rem;
+    color: white;
     margin-bottom: 10px;
 }
-
 header h1 span {
-    color: #f39c12; /* Color dorado para la palabra "Inteligentes" */
+    color: #f39c12;
 }
-
-/* Navigation styles */
-.container-nav {
+.navegador{
     background-color: rgb(33, 33, 33); /* Fondo gris oscuro */
     padding: 10px 0;
 }
-
-.nav-principal {
+.navegadorinterior {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
-
-.nav-principal a {
+.navegadorinterior a{
     color: white;
     text-decoration: none;
     font-size: 1.1rem;
@@ -54,126 +41,76 @@ header h1 span {
     border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-.nav-principal a:hover {
-    background-color: rgb(50, 50, 50); /* Fondo gris más claro al pasar el ratón */
-    color: #f39c12; /* Color dorado al pasar el ratón */
-}
-
-/* Body and Article */
-body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(24, 23, 23); /* Fondo oscuro */
-    color: white;
-    line-height: 1.6;
-}
-
-article {
-    background-color: rgb(24, 23, 23); /* Fondo oscuro */
+.imgprincipal {
+    text-align: center; 
     padding: 20px;
 }
-
-section {
+.imgprincipal img {
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+article{
+    background-color: rgb(24, 23, 23);
+    color: white;
     padding: 20px;
 }
-
-/* Headings */
-h2, h3, h4 {
-    color: white;
-    margin-bottom: 10px;
+section{
+    padding: 20px;
 }
-
-h4 {
+h4{
     display: inline-block;
     margin-top: 10px;
+    margin-bottom: 0px;
 }
-
-/* Box and Layout Styles */
-#new {
+#new{
     margin-top: 100px;
 }
-
-#encabezado {
+#encabezado{
     text-align: center;
 }
-
-#contnoti {
+#contnoti{
     text-align: center;
     width: 90%;
-    margin: 0 auto;
 }
-
-.boxext {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-}
-
-.box {
-    width: 45%;
-    background-color: rgba(255, 255, 255, 0.1); /* Transparencia leve */
-    padding: 20px;
-    margin: 20px 0;
+.box{
+    width: 40%;
+    color: white;
+    margin-left: 5%;
+    margin-right: 5%;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 0.1); /* Transparencia leve */
 }
-
-.box img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-}
-
-/* Table Styles */
-#aplicaciones {
+#new{
     text-align: center;
-    margin: 40px 0;
+    padding-left: 50px;
 }
-
+.boxext{
+    display: flex;
+}
+#aplicaciones{
+    text-align: center;
+}
 table {
     table-layout: fixed;
     width: 90%;
-    margin: 20px auto;
     border-collapse: collapse;
-    border: 3px solid white;
-}
-
+    border: 3px solid rgb(255, 255, 255);
+    margin: 2% 5%;
+  }
+  .titulo{
+    text-align: center;
+  }
 th, td {
     padding: 10px;
-    border: 1px solid white;
-    color: white;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ffffff;
 }
-
-.titulo {
-    text-align: center;
-    background-color: rgb(0, 0, 0); /* Fondo de la cabecera de la tabla */
-    color: white;
-    padding: 15px;
-    font-weight: bold;
-}
-
-
-footer {
-    background-color: rgb(24, 23, 23); /* Fondo oscuro */
-    color: white;
+footer{
+    background-color: rgb(24, 23, 23);
+    color: white;   
     text-align: center;
     padding: 20px;
     font-size: large;
-    margin-top: 40px;
-}
-
-
-@media (max-width: 768px) {
-    .boxext {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .box {
-        width: 90%;
-    }
-
-    table {
-        width: 100%;
-    }
 }
